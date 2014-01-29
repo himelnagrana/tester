@@ -1,18 +1,44 @@
-<h1>Home#index</h1>
+<h1>Login Test</h1>
 <p><h1>Hello, Tester!</h1></p>
 
-<%= form_for :login do |f| %>
+<%= form_for :loginTest do |f| %>
+
+    <p>
+      <%= f.label :Site_URL %><br>
+      <%= f.url_field :Site_URL %>
+    </p>
+
+    <p>
+      <%= f.label :username_Field_Id %><br>
+      <%= f.text_field :username_Field_Id %>
+    </p>
+
     <p>
       <%= f.label :username %><br>
       <%= f.text_field :username %>
     </p>
 
     <p>
-      <%= f.label :password %><br>
-      <%= f.password_field :password %>
+      <%= f.label :password_Field_Id %><br>
+      <%= f.text_field :password_Field_Id %>
     </p>
 
     <p>
-      <%= f.submit :Login %>
+      <%= f.label :password %><br>
+      <%= f.text_field :password %>
+    </p>
+
+    <p>
+      <%= f.label :login_Button_Id %><br>
+      <%= f.text_field :login_Button_Id %>
+    </p>
+
+    <p>
+      <%= f.label :logout_Menu_Text %><br>
+      <%= f.text_field :logout_Menu_Text %>
+    </p>
+
+    <p>
+      <%= f.submit :Test %>
     </p>
 <% end %>
